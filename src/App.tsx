@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 // import Home from './components/Home'; // Create these components
 // import About from './components/About';
 // import Contact from './components/Contact';
@@ -6,15 +6,15 @@ import SideBar from './components/sidebar';
 
 function App() {
     return (
-        <div className="App">
-            <Routes>
+            <div className="App">
                 <SideBar/>
-                {/*<Route path="/" element={<Home />} />*/}
-                {/*<Route path="/about" element={<About />} />*/}
-                {/*<Route path="/con?act" element={<Contact />} />*/}
-            </Routes>
-        </div>
-    );
+                {/*<Routes>*/}
+                    {/*<Route path="/" element={<Home />} />*/}
+                    {/*<Route path="/about" element={<About />} />*/}
+                    {/*<Route path="/con?act" element={<Contact />} />*/}
+                {/*</Routes>*/}
+            </div>
+    )
 }
 
 export default App;
