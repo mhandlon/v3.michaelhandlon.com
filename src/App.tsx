@@ -1,18 +1,21 @@
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 // import Home from './components/Home'; // Create these components
 // import About from './components/About';
 // import Contact from './components/Contact';
+
 import SideBar from './components/sidebar';
+
+import Home from './components/index/home';
 
 function App() {
     return (
             <div className="App">
                 <SideBar/>
-                {/*<Routes>*/}
-                    {/*<Route path="/" element={<Home />} />*/}
+                <Routes>
+                    <Route path="/" element={<Home />} />
                     {/*<Route path="/about" element={<About />} />*/}
                     {/*<Route path="/con?act" element={<Contact />} />*/}
-                {/*</Routes>*/}
+                </Routes>
             </div>
     )
 }
