@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../css/intro.css'
+import './intro.css'
 
 const Intro: React.FC = () => {
     return (

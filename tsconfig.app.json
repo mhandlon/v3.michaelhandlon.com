@@ -5,7 +5,9 @@
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
+    "types": ["vite/client", "@types/react", "@types/react/next"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -14,7 +16,8 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Linting */
     "strict": true,
